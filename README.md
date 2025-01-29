@@ -15,12 +15,14 @@ Chef Mistral is an AI-powered recipe suggestion application built with React. Si
 - Vite
 - Hugging Face / Mistral
 
-## ⚠️ Important Note
+> [!NOTE] ## ⚠️ Important Note
+>
+> This repository does not include the API key for Claude. You will need to:
+>
+> 1. Obtain your own API key from [HuggingFace](https://huggingface.co/settings/tokens)
+> 2. Create a `.env` file in the root directory
+> 3. Add your API key as follows:
 
-This repository does not include the API key for Claude. You will need to:
-1. Obtain your own API key from [HuggingFace](https://huggingface.co/settings/tokens)
-2. Create a `.env` file in the root directory
-3. Add your API key as follows:
 ```
 VITE_HF_ACCESS_KEY=your_api_key_here
 ```
@@ -35,16 +37,19 @@ VITE_HF_ACCESS_KEY=your_api_key_here
 ### Installation Steps
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/chef-mistral.git
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd chef-mistral
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 ```
@@ -52,11 +57,13 @@ npm install
 4. Create and configure your `.env` file as mentioned in the Important Note section
 
 5. Start the development server:
+
 ```bash
 npm run dev
 ```
 
 6. Open your browser and visit:
+
 ```
 http://localhost:5173
 ```
