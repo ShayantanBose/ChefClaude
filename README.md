@@ -15,7 +15,9 @@ Chef Mistral is an AI-powered recipe suggestion application built with React. Si
 - Vite
 - Hugging Face / Mistral
 
-> [!NOTE] ## ⚠️ Important Note
+> [!NOTE]
+>
+> ## ⚠️ Important Note
 >
 > This repository does not include the API key for Claude. You will need to:
 >
