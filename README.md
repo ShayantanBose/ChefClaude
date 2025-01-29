@@ -81,3 +81,14 @@ Feel free to submit issues and pull requests to improve the application.
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔮 Future Improvements
+
+- Enhancing the user interface with smooth animations for a more fluid experience
+- Implementing loading states and transitions during recipe generation
+- Adding recipe saving functionality for future reference
+- Introducing ingredient quantity suggestions
+- Creating a recipe sharing feature
+- Adding recipe categories and filters
+- Implementing user accounts to save favorite recipes
+- Adding step-by-step cooking mode with timers
