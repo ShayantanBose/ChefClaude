@@ -6,6 +6,7 @@ import { getRecipeFromMistral } from "../ai.js";
 export default function Main() {
   const [ingredient, setIngeredients] = useState([]);
   const [recipe, setRecipe] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function HandleSubmit(formData) {
     const ingredientInput = formData.get("ingredients");
@@ -20,8 +21,10 @@ export default function Main() {
   }
 
   async function getRecipeButton() {
+    setLoading(true);
     const generateRecipe = await getRecipeFromMistral(ingredient);
     setRecipe(generateRecipe);
+    setLoading(false);
   }
 
   return (
@@ -38,6 +41,7 @@ export default function Main() {
       {ingredient.length ? (
         <IngredientList recipeBtn={getRecipeButton} ingredient={ingredient} />
       ) : null}
+      {loading && <p>Fetching recipe....</p>}
       {recipe ? <ClaudeRecipe recipe={recipe} /> : null}
     </main>
   );
